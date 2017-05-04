@@ -1,0 +1,25 @@
+{
+  "name": "grupo",
+  "plural": "grupos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "sights": {
+      "type": "hasAndBelongsToMany",
+      "model": "sight",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

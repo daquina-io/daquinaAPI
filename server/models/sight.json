@@ -1,0 +1,36 @@
+{
+  "name": "sight",
+  "plural": "sigths",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "comment": {
+      "type": "string"
+    },
+    "attachment": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "grupo": {
+      "type": "hasOne",
+      "model": "grupo",
+      "foreignKey": ""
+    },
+    "venue": {
+      "type": "hasOne",
+      "model": "venue",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
